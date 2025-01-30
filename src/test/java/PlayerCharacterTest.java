@@ -62,9 +62,9 @@ public class PlayerCharacterTest {
     }
 
     @Test
-    void movedUp_returns42_WhenNotPressed_ASDW() {
+    void moved_returns42_WhenNotPressed_ASDW() {
         char given = 'G';
-        int expect = 42;
+        int expect = 60;
         int actual = PlayerCharacter.move(given);
 
         Assertions.assertEquals(expect, actual);

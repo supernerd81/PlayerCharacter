@@ -36,7 +36,7 @@ public class PlayerCharacter {
                 break;
 
             default:
-                returns = 42;
+                returns = 60;
         }
 
         return returns;
