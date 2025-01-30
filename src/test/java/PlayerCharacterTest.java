@@ -9,4 +9,5 @@ public class PlayerCharacterTest {
         int actual = PlayerCharacter.getX();
         Assertions.assertEquals(expect, actual);
     }
+
 }
