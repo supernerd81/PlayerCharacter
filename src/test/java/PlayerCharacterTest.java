@@ -10,4 +10,10 @@ public class PlayerCharacterTest {
         Assertions.assertEquals(expect, actual);
     }
 
+    @Test
+    void getY_null() {
+        int expect = 0;
+        int actual = PlayerCharacter.getY();
+        Assertions.assertEquals(expect, actual);
+    }
 }
