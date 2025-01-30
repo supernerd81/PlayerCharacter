@@ -26,9 +26,18 @@ public class PlayerCharacterTest {
     }
 
     @Test
-    void movedUp_onPressed_key_W_VarX_PlusOne() {
+    void movedUp_onPressed_key_W_PositionY_PlusOne() {
         char given = 'W';
         int expect = 1;
+        int actual = PlayerCharacter.move(given);
+
+        Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
+    void movedUp_onPressed_key_S_PositionY_MinusOne() {
+        char given = 'S';
+        int expect = -1;
         int actual = PlayerCharacter.move(given);
 
         Assertions.assertEquals(expect, actual);
