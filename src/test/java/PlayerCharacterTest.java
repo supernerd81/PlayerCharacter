@@ -51,4 +51,13 @@ public class PlayerCharacterTest {
 
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void movedUp_onPressed_key_D_PositionX_PlusOne() {
+        char given = 'D';
+        int expect = 1;
+        int actual = PlayerCharacter.move(given);
+
+        Assertions.assertEquals(expect, actual);
+    }
 }
